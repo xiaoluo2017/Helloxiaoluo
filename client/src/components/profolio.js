@@ -3,6 +3,7 @@ import { ButtonToolbar, Button, Navbar, Col, Row, Grid, Modal } from 'react-boot
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 
 const titles = ["VOTING APP", "IPICTURE", "STOCK MARKET", "RECIPE BOX", "TIC TAC TOE", "GAME OF LIFE", 
                 "WIKIPEDIA VIEWER", "MARK DOWN", "CALCULATOR", "SIMON"
@@ -82,13 +83,16 @@ class Profolio extends Component {
   }
 
   handleClick = (i) => {
+    let externalLinks = false;
+    if (i <= 3 || i === 5) externalLinks = true;
     this.setState({
       title: titles[i],
       introduction: introductions[i],
       img_url: "images/" + i + ".PNG",
       site_url: site_urls[i], 
       source_url: source_urls[i],
-      display: true
+      display: true,
+      externalLinks: externalLinks
     });
   }
 
@@ -158,10 +162,10 @@ class Profolio extends Component {
           </div>
           <div className="row module">
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(6)}} src="images/wiki.jpg" alt="wikipedia viewer" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(6)}} src="../../public/images/wiki.jpg" alt="wikipedia viewer" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(7)}} src="images/markdown.jpg" alt="mark down" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(7)}} src="./images/markdown.jpg" alt="mark down" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
               <img onClick = {() => {this.handleClick(8)}} src="images/calculator.jpg" alt="calculator" className="img-fluid img-thumbnail link" />
@@ -187,7 +191,9 @@ class Profolio extends Component {
           </Modal.Body>
 
           <Modal.Footer>
-            <Button className="link btn-outline-primary" target="_blank" href={this.state.site_url}>VISIT SITE</Button>
+            <Button className="link btn-outline-primary" target="_blank" href={this.state.site_url}>
+                {this.state.externalLinks ? <div>VISIT SITE</div> : <Link to={this.state.site_url}>VISIT SITE</Link>}
+            </Button>
             <Button className="link btn-outline-primary" target="_blank" href={this.state.source_url}>VIEW SOURCE</Button>
             <Button className="link btn-outline-dark" onClick={this.closeModal}>Close</Button>
           </Modal.Footer>
