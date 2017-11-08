@@ -140,32 +140,32 @@ class Profolio extends Component {
           </div>
           <div className="row module">
             <div className="col-md-6 col-sm-12 container-img">
-              <img onClick = {() => {this.handleClick(0)}} src="/images/vote.jpg" alt="vote app" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(0)}} src="images/vote.jpg" alt="vote app" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-6 col-sm-12">
-              <img onClick = {() => {this.handleClick(1)}} src="/images/ipicture.jpg" alt="ipiture" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(1)}} src="images/ipicture.jpg" alt="ipiture" className="img-fluid img-thumbnail link" />
             </div>
           </div>
           <div className="row module">
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(2)}} src="public/images/stock.jpg" alt="stock market" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(2)}} src="images/stock.jpg" alt="stock market" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(3)}} src="client/public/images/recipe.jpg" alt="recipe box" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(3)}} src="images/recipe.jpg" alt="recipe box" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(4)}} src="/client/public/images/tietictoe.jpg" alt="tie tic toe" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(4)}} src="images/tietictoe.jpg" alt="tie tic toe" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(5)}} src="./client/public/images/gameoflife.jpg" alt="game of life" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(5)}} src="images/gameoflife.jpg" alt="game of life" className="img-fluid img-thumbnail link" />
             </div>
           </div>
           <div className="row module">
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(6)}} src="../../public/images/wiki.jpg" alt="wikipedia viewer" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(6)}} src="images/wiki.jpg" alt="wikipedia viewer" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(7)}} src="./images/markdown.jpg" alt="mark down" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(7)}} src="images/markdown.jpg" alt="mark down" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
               <img onClick = {() => {this.handleClick(8)}} src="images/calculator.jpg" alt="calculator" className="img-fluid img-thumbnail link" />
@@ -187,13 +187,19 @@ class Profolio extends Component {
 
           <Modal.Body>
             <img src={this.state.img_url} alt={this.state.title} className="img-fluid" />
-            <p className="text-center introduction">{this.state.introduction}</p>
+            <p className="text-center introduction col-md-8 col-sm-12 mx-auto">{this.state.introduction}</p>
           </Modal.Body>
 
           <Modal.Footer>
+            {this.state.externalLinks ?
             <Button className="link btn-outline-primary" target="_blank" href={this.state.site_url}>
-                {this.state.externalLinks ? <div>VISIT SITE</div> : <Link to={this.state.site_url}>VISIT SITE</Link>}
+              VISIT SITE
             </Button>
+            :
+            <Button className="link btn-outline-primary">
+              <Link to={this.state.site_url} target="_blank">VISIT SITE</Link>
+            </Button>
+            }
             <Button className="link btn-outline-primary" target="_blank" href={this.state.source_url}>VIEW SOURCE</Button>
             <Button className="link btn-outline-dark" onClick={this.closeModal}>Close</Button>
           </Modal.Footer>
