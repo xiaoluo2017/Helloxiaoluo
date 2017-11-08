@@ -136,10 +136,10 @@ class Profolio extends Component {
           </div>
           <div className="row module">
             <div className="col-md-6 col-sm-12 container-img">
-              <img onClick = {() => {this.handleClick(0)}} src="images/vote.jpg" alt="vote app" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(0)}} src="/images/vote.jpg" alt="vote app" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-6 col-sm-12">
-              <img onClick = {() => {this.handleClick(1)}} src="images/ipicture.jpg" alt="ipiture" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(1)}} src="/images/ipicture.jpg" alt="ipiture" className="img-fluid img-thumbnail link" />
             </div>
           </div>
           <div className="row module">
