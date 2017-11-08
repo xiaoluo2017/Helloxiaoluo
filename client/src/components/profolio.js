@@ -197,7 +197,7 @@ class Profolio extends Component {
             </Button>
             :
             <Button className="link btn-outline-primary">
-              <Link to={this.state.site_url} target="_blank">VISIT SITE</Link>
+              <Link to={this.state.site_url}>VISIT SITE</Link>
             </Button>
             }
             <Button className="link btn-outline-primary" target="_blank" href={this.state.source_url}>VIEW SOURCE</Button>
