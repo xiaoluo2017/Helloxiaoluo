@@ -144,16 +144,16 @@ class Profolio extends Component {
           </div>
           <div className="row module">
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(2)}} src="images/stock.jpg" alt="stock market" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(2)}} src="public/images/stock.jpg" alt="stock market" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(3)}} src="images/recipe.jpg" alt="recipe box" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(3)}} src="client/public/images/recipe.jpg" alt="recipe box" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(4)}} src="images/tietictoe.jpg" alt="tie tic toe" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(4)}} src="/client/public/images/tietictoe.jpg" alt="tie tic toe" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-3 col-sm-6">
-              <img onClick = {() => {this.handleClick(5)}} src="images/gameoflife.jpg" alt="game of life" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(5)}} src="./client/public/images/gameoflife.jpg" alt="game of life" className="img-fluid img-thumbnail link" />
             </div>
           </div>
           <div className="row module">
