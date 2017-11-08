@@ -1,0 +1,402 @@
+.container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* footer css */
+.copyright {
+  text-align: center;
+  font-weight: 300;
+  color: #aaa;
+}
+
+/* header css */
+.bg-dark {
+  background-color: black !important;
+  padding: 5px !important;
+}
+
+.nav-item {
+  padding-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ccc;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #ccc;
+}
+
+/* Tic_Tac_Toe css */
+.body-tic {
+  background-color: #f8f9fa;
+} 
+
+.btn-tic {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 80px;
+  height: 140px;
+  background-color: #f8f9fa !important;
+  border: #f8f9fa;
+  border-radius: 0%;
+} 
+
+.tic {
+  padding: 0px !important;
+  background-color: white;
+}
+
+#row0col0 {
+  border-right: 2px solid #343a40;
+  border-bottom: 2px solid #343a40;
+}
+
+#row0col1 {
+  border-left: 2px solid #343a40;
+  border-right: 2px solid #343a40;
+  border-bottom: 2px solid #343a40;
+}
+
+#row0col2 {
+  border-left: 2px solid #343a40;
+  border-bottom: 2px solid #343a40;
+}
+
+#row1col0 {
+  border-top: 2px solid #343a40;
+  border-right: 2px solid #343a40;
+  border-bottom: 2px solid #343a40;
+}
+
+#row1col1 {
+  border: 2px solid #343a40;
+}
+
+#row1col2 {
+  border-left: 2px solid #343a40;
+  border-top: 2px solid #343a40;
+  border-bottom: 2px solid #343a40;
+}
+
+#row2col0 {
+  border-top: 2px solid #343a40;
+  border-right: 2px solid #343a40;
+}
+
+#row2col1 {
+  border-left: 2px solid #343a40;
+  border-top: 2px solid #343a40;
+  border-right: 2px solid #343a40;
+}
+
+#row2col2 {
+  border-left: 2px solid #343a40;
+  border-top: 2px solid #343a40;
+  outline: none;
+}
+
+#result {
+  padding-top: 30px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 30px;
+}
+
+#explain {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 20px;
+}
+
+#X {
+  border-bottom: 3px solid red;
+}
+
+/* calculator css */
+.btn-cal {
+  font-family: 'Ubuntu', sans-serif;
+  width: 80px;
+  height: 60px;
+  margin-top: 10px;
+} 
+
+.col-cal {
+  padding: 0px !important;
+  background-color: f8f9fa;
+}
+
+.number {
+  background-color: white !important; 
+  border-color: white;
+  font-size: 20px !important;
+}
+
+.cal {
+  padding: 10px;
+  background-color: #efefef;
+}
+
+#equation {
+  color: grey;
+  padding-right: 5px;
+  font-size: 15px;
+  height: 30px;
+}
+
+.h1-cal {
+  font-size: 40px;
+}
+
+.container-cal {
+  padding-top: 80px;
+}
+
+.footer-cal {
+  padding-top: 30px;
+}
+
+/* wikipedia viewer css */
+.res {
+  margin-top: 15px;
+  background-color: #f8f9fa;
+  padding: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125); 
+  border-radius: 0.25rem;
+}
+
+.res:hover {
+  border-left-width: 4px;
+  border-left-color: orange;
+  cursor: pointer;
+}
+
+.vertical {
+  height: 100px;
+  line-height: 100px;
+} 
+
+.blank {
+  padding: 160px;
+}
+
+#keyword {
+  padding: 5px;
+  font-size: 18px;
+  border-width: 2px;
+  border-color: orange;
+  color: #000000;
+  border-style: solid;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+  text-shadow: undefined 0px 0px 5px 0px rgba(66,66,66,.75);
+  text-align: center;
+  font-family: 'Wendy One', sans-serif;
+  margin-bottom: 20px;
+}
+
+#keyword:focus {
+  outline:none;
+}
+
+/* simon css */
+#simon-board {
+  background-color: #343a40;
+  border: 15px solid #343a40;
+  border-radius: 100%;
+  margin: 0px;
+}
+
+.pad {
+  border: 15px solid #343a40;
+} 
+
+.simon {
+  padding: 0px !important;
+}
+
+#core {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0px 0px -150px;
+  background-color: #f8f9fa;
+  border: 30px solid #343a40;
+}
+
+#green {
+  background-color: #28a745; 
+  border-radius: 100% 0 0 0;
+}
+
+#green:active {
+  background-color: #3cfa67 !important;
+}
+
+#red {
+  background-color: #aa3545; 
+  border-radius: 0 100% 0 0;
+}
+
+#red:active {
+  background-color: #ff4f67 !important;
+}
+
+#yellow {
+  background-color: #aaa107;
+  border-radius: 0 0 0 100%;
+}
+
+#yellow:active {
+  background-color: #fffa0a !important;
+}
+
+#blue {
+  background-color: #007baa;
+  border-radius: 0 0 100% 0;
+}
+
+#blue:active {
+  background-color: #00b8ff !important;
+}
+
+.btn-danger-simon {
+  border: 5px solid #343a40 !important;
+  border-radius: 100% !important;
+}
+
+.btn-warning-simon {
+  border: 5px solid #343a40 !important;
+  border-radius: 100% !important;
+}
+
+#brand-simon {
+  font-family: 'Alfa Slab One', cursive;
+  color: #222;
+  font-size: 3.2em;
+  margin-top: 35px;
+}
+
+#display {
+  height: 40px;
+  background-color: #32050C;
+  color: #DC0D29;
+  border-radius: 15%;
+  border: 5px solid #343a40;
+  font-size: 20px;
+}
+
+.label {
+  color: #343a40;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7em;
+  margin-top: 5px;
+}
+
+/* profolio css */
+.hr {
+  margin-bottom: 50px;
+}
+
+.greetings {
+  padding-top: 300px;
+  color: #FFF;
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.introduce {
+  line-height: 1.875rem;
+  margin: 0 0 1.875rem;
+}
+
+.text-left {
+  text-indent: 2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.remark {
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+  color: grey;
+}
+
+.img-thumbnail {
+  margin: 25px 10px 25px 10px;
+}
+
+.social {
+  padding: 80px 15px 0px 15px;
+}
+
+.social:hover {
+  color: #007bff;
+}
+
+.brand {
+  margin: 0px 15px 0px 15px;
+}
+
+#email {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  color: grey;
+  padding: 20px;
+}
+
+#contact {
+  margin-top: 60px; 
+  padding: 80px 0px 60px 0px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.introduction {
+  padding: 20px 150px 0px 150px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.resume { 
+  background-image: url("resume.jpeg");
+  height: 200px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#resume {
+  padding: 40px;
+}
+
+.photo {
+  border-radius: 100%;
+  margin: 30px 0px 30px 0px;
+}
+
+.greeting-background { 
+  background-image:   
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)
+    ),
+    url("greeting.jpeg");
+  height: 800px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
