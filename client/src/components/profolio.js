@@ -226,7 +226,7 @@ class Profolio extends Component {
     );
 
     const resumeInstance = (
-      <div className="resume">
+      <div className="resume fix-background fix-background">
         <h2 className="text-center" id="resume">VIEW MY RESUME!</h2>
         <div className="col-md-6 col-sm-8 col-xs-12 mx-auto text-center">
           <Button className="btn btn-outline-dark" href="RESUME.pdf" target="_blank">RESUME</Button>
@@ -235,7 +235,7 @@ class Profolio extends Component {
     );
 
     const greetingInstance = (
-      <div className="greeting-background text-center">
+      <div className="greeting-background text-center fix-background">
         <h1 className="greetings">HI, I'M XIAO</h1>
       </div>
     );
