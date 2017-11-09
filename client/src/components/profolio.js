@@ -120,7 +120,7 @@ class Profolio extends Component {
           </div>
           <div className="row">
             <div className="col-md-12 container-img">
-              <img onClick = {() => {this.handleClick(0)}} src="images/vote.PNG" alt="vote app" className="img-fluid link profolio-img" />
+              <img onClick = {() => {this.handleClick(0)}} src="images/vote.png" alt="vote app" className="img-fluid link profolio-img" />
             </div>
           </div>
           <div className="row">
