@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ButtonToolbar, Button, Navbar, Col, Row, Grid, Modal } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
 
@@ -64,8 +64,6 @@ class Profolio extends Component {
   }
 
   handleClick = (i) => {
-    let externalLinks = false;
-    if (i <= 3 || i === 5) externalLinks = true;
     this.setState({
       title: titles[i],
       introduction: introductions[i],
@@ -135,7 +133,7 @@ class Profolio extends Component {
           </div>
           <div className="row">
             <div className="col-md-8 col-sm-12">
-              <img onClick = {() => {this.handleClick(2)}} src="images/t1.jpg" alt="stock market" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(2)}} src="images/stock.jpg" alt="stock market" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-4 col-sm-12 topics">
               <div className="topic">React</div>
@@ -148,7 +146,7 @@ class Profolio extends Component {
           </div>
           <div className="row">
             <div className="col-md-8 col-sm-12">
-              <img onClick = {() => {this.handleClick(3)}} src="images/t2.jpg" alt="recipe box" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(3)}} src="images/recipe.jpg" alt="recipe box" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-4 col-sm-12 topics">
               <div className="topic">React</div>
@@ -160,7 +158,7 @@ class Profolio extends Component {
           </div>
           <div className="row">
             <div className="col-md-8 col-sm-12">
-              <img onClick = {() => {this.handleClick(4)}} src="images/t33.jpg" alt="game of life" className="img-fluid img-thumbnail link" />
+              <img onClick = {() => {this.handleClick(4)}} src="images/game.jpg" alt="game of life" className="img-fluid img-thumbnail link" />
             </div>
             <div className="col-md-4 col-sm-12 topics">
               <div className="topic">React</div>
@@ -202,7 +200,7 @@ class Profolio extends Component {
         <div className="col-xs-12 mx-auto">
           <h1 className="text-center">CONTACT</h1>
           <div className="col-md-6 col-sm-8 col-xs-12 mx-auto">
-            <p className="text-center" id="email"><a href="mailto:xiao2017luo@gmail.com" target="_blank">Email: xiao2017luo@gmail.com</a></p>
+            <p className="text-center" id="email"><a href="mailto:xiao2017luo@gmail.com" target="_blank" rel="noopener noreferrer">Email: xiao2017luo@gmail.com</a></p>
           </div>
         </div>
         <div className="row">
