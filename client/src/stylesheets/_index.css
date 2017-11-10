@@ -127,11 +127,25 @@
 }
 
 .profolio-img {
-  margin: 50px 0px 100px 0px;
+  margin: 30px 0px 30px 0px;
+}
+
+.topic {
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  margin: 0 0.5em 0.5em 0;
+  white-space: nowrap;
+  background-color: #f1f8ff;
+  border-radius: 3px;
+  font-size: 12px;
 }
 
 @media (min-width : 720px) {
   .fix-background {
     background-attachment: fixed;
+  }
+
+  .topics {
+    margin-top: 25px;
   }
 }

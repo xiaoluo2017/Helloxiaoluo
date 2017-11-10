@@ -123,20 +123,51 @@ class Profolio extends Component {
               <img onClick = {() => {this.handleClick(0)}} src="images/vote.png" alt="vote app" className="img-fluid link profolio-img" />
             </div>
           </div>
+          <hr className="hr" />
           <div className="row">
             <div className="col-md-12">
               <img onClick = {() => {this.handleClick(1)}} src="images/ipicture.PNG" alt="ipiture" className="img-fluid link profolio-img" />
             </div>
           </div>
+          <hr className="hr" />
+          <div className="col-md-6 col-sm-8 col-xs-12 mx-auto">
+            <p className="text-center remark">OTHER PROJECTS</p>
+          </div>
           <div className="row">
-            <div className="col-md-4 col-sm-12">
-              <img onClick = {() => {this.handleClick(2)}} src="images/stock.jpg" alt="stock market" className="img-fluid img-thumbnail link" />
+            <div className="col-md-8 col-sm-12">
+              <img onClick = {() => {this.handleClick(2)}} src="images/t1.jpg" alt="stock market" className="img-fluid img-thumbnail link" />
             </div>
-            <div className="col-md-4 col-sm-12">
-              <img onClick = {() => {this.handleClick(3)}} src="images/recipe.jpg" alt="recipe box" className="img-fluid img-thumbnail link" />
+            <div className="col-md-4 col-sm-12 topics">
+              <div className="topic">React</div>
+              <div className="topic">Node</div>
+              <div className="topic">Express.js</div>
+              <div className="topic">Mongodb</div>
+              <div className="topic">Recharts</div>
+              <div className="topic">React-bootstrap</div>
             </div>
-            <div className="col-md-4 col-sm-12">
-              <img onClick = {() => {this.handleClick(5)}} src="images/gameoflife.jpg" alt="game of life" className="img-fluid img-thumbnail link" />
+          </div>
+          <div className="row">
+            <div className="col-md-8 col-sm-12">
+              <img onClick = {() => {this.handleClick(3)}} src="images/t2.jpg" alt="recipe box" className="img-fluid img-thumbnail link" />
+            </div>
+            <div className="col-md-4 col-sm-12 topics">
+              <div className="topic">React</div>
+              <div className="topic">Node</div>
+              <div className="topic">Express.js</div>
+              <div className="topic">Mongodb</div>
+              <div className="topic">React-bootstrap</div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-8 col-sm-12">
+              <img onClick = {() => {this.handleClick(4)}} src="images/t33.jpg" alt="game of life" className="img-fluid img-thumbnail link" />
+            </div>
+            <div className="col-md-4 col-sm-12 topics">
+              <div className="topic">React</div>
+              <div className="topic">React-bootstrap</div>
+              <div className="topic">HTML</div>
+              <div className="topic">CSS</div>
+              <div className="topic">jQuery</div>
             </div>
           </div>
         </div>
