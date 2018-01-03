@@ -102,7 +102,7 @@ class Profolio extends Component {
           <div>
             <p className="text-left introduce">Hi, my name is Xiao Luo. I graduated from <strong>George Washington University</strong>  on 05/2017 with a MS degree in <strong>Electrical Engineering</strong>.</p>
             <p className="text-left introduce">I has a great understanding in algorithms and problem solving in general. During graduate study, I built a movie recommend system with Hadoop on docker, and I also had industrial experience as a software engineer intern working on Java and MySQL projects. I am always willing to study, communicate and learn new knowledge. To make up for the lack of major, I learned new knowledge from online courses. I developed an impressive Picture Shard Website while learning Javascipt. I am a quick learning, capable, and talented software programmer. </p>
-            <p className="text-left introduce">I am seeking for <strong>FULL-TIME</strong> positions starting on Dec 2017 in <strong>SOFTWARE ENGINEER</strong>. Take some time to look at my work and if you would like to discuss further, let's <a href="#contact">get in touch</a>.</p>
+            <p className="text-left introduce">I am seeking for <strong>FULL-TIME</strong> positions starting on Dec 2017 in <strong>SOFTWARE ENGINEER</strong>. Take some time to look at my work and if you would like to discuss further, let&apos;s <a href="#contact">get in touch</a>.</p>
           </div>
         </div>
       </div>
