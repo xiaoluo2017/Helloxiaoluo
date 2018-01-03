@@ -224,7 +224,7 @@ class Profolio extends Component {
 
     const greetingInstance = (
       <div className="greeting-background text-center fix-background">
-        <h1 className="greetings">HI, I'M XIAO</h1>
+        <h1 className="greetings">HI, I&apos;M XIAO</h1>
       </div>
     );
 
